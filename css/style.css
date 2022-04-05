@@ -1,0 +1,402 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+     font-size: 62.5%;
+
+}
+
+body {
+     font-size: 1.6rem;
+     font-family: serif;
+}
+
+ul{
+     padding: 0;
+     margin: 0;
+     list-style: none;
+}
+
+a {
+     text-decoration: none;
+     color: black;
+}
+
+/* Utilities */
+.btn {
+     padding: 10px 20px;
+     text-transform:uppercase;
+}
+
+.btn-light {
+     background-color: white;
+     color: black;
+}
+
+.btn-dark {
+     color: white;
+     background-color: black;
+}
+
+.flex{
+     display: flex;
+}
+
+strong {
+     font-weight: 900;
+     font-size: 3rem;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+/* * {
+     border: thin black solid;
+} */
+header {
+     /* display: table; */
+     padding: 20px;
+     width: 100%;
+     padding-bottom: 10px;
+     margin-bottom: 0;
+     overflow: auto;
+
+}
+
+header  > .brandLogo{
+     font-family: 'Sacramento', serif;
+     font-size: 3rem;
+     /* display: block; */
+}
+
+header nav{
+     flex-grow: 2;
+  
+}
+header nav ul {
+     flex-grow: 2;
+     justify-content: flex-end;
+}
+
+header ul li {
+     margin: 0 1rem;
+     /* margin: 0 auto; */
+}
+
+header > nav > a.btn.btn-light {
+     padding: 0;
+}
+
+/* Main section */
+
+main {
+     color: white;
+     background-image: url("../images/hero-img.jpeg");
+     height: 500px;
+     background-size: cover;
+     padding-left: 10vw;
+     margin-bottom: 100px;
+}
+
+main > h1 {
+     margin: 0;
+     padding-top: 100px;
+     font-size: 6rem;
+     font-weight: 100;
+     width: 50%;
+}    
+
+main > p {
+     letter-spacing: .25rem;
+     text-transform: uppercase;
+}    
+
+main > aside {
+     margin-top: 50px;
+     height: 200px;
+     background: black;
+     width: 200px;
+     text-transform: uppercase;
+     position: relative;
+}
+
+main > aside > span {
+     position: absolute;
+     top: 20px;
+     left: 20px;
+}
+
+main > aside > h2 {
+     position: absolute;
+     margin: 0;
+     padding: 0;
+     font-size: 1.5rem;
+     font-weight: 100;
+     top: 60px;
+     left: 20px;
+
+}
+
+main > aside > a {
+     position: absolute;
+     bottom: 20px;
+     left: 20px;
+     width: 60%;
+     font-size: 1rem;
+}
+
+main > span {
+     transform: rotate(90deg);
+     float: right;
+     margin-top: -350px;
+     margin-right: -100px;
+     color: white;
+     font-size: 2rem;
+}
+
+main > button {
+     float: right;
+     padding: 5px;
+     margin-left: 5px;
+     margin-top: -100px;
+}
+
+main > button:first-of-type {
+     margin-right: 100px;
+}
+
+main > button:last-of-type {
+     margin-right: 140px;
+}
+
+/* Offerings */
+.offerings {
+     display: flex;
+     margin: 0 100px;
+     text-align: center;
+     margin-bottom: 100px;
+}
+.offerings > section {
+     margin: 0 20px;
+}
+
+.offerings  h3 {
+     text-transform:uppercase;
+}
+
+.offerings i {
+     font-size: 6rem;
+}
+
+/* Video */
+.video {
+     background: #f3f4f6;
+     padding: 50px 100px;
+     overflow: auto;
+}
+
+.video > section {
+     float: left;
+     width: 50%;
+}
+
+.video h3 {
+     text-transform: uppercase;
+     font-size: 3rem;
+}
+
+.video p {
+     color: gray;
+     line-height: 1.5;
+     margin-bottom: 40px;
+}
+
+.video img {
+     padding-left: 20px;
+     width: 100%;
+}
+
+/* Stylists */
+.stylists {
+     display: flex;
+     justify-content: center;
+     padding-top: 50px;
+}
+
+.stylists > section {
+     margin: 0 10px;
+     position: relative;
+}
+
+.stylists > section > div {
+     position: absolute;
+     bottom: -20px;
+     left: 15px;
+     right: 15px;
+     background: black;
+     overflow: auto;
+     width: 80%;
+     height: 40px;
+     color: white;
+     text-align: center;
+     text-transform: uppercase;
+}
+
+.stylists > section > div > h4 {
+     font-size: 1rem;
+     margin: 0;
+     margin-top: 7px;
+     padding: 0;
+}
+
+.stylists > section > div > span {
+     font-size: 0.8rem;
+}
+
+.stylists img {
+     width: 100%;
+     height: 200px;
+}
+
+/* Offer */
+.offer {
+     margin: 50px 10%;
+     padding: 50px 50px;
+     background: rgb(235, 235, 235);
+     text-transform: uppercase;
+}
+
+.offer > h4 {
+     font-size: 1.5rem;
+     font-weight: 100;
+}
+
+.offer > p {
+     width: 40%;
+     font-size: 2rem;
+}
+
+.offer > a {
+     font-size: 1.1rem;
+}
+
+/* Gallery */
+section.gallery {
+     flex-wrap: wrap;
+     display: flex;
+}
+
+.gallery > h3,
+.gallery > span {
+     width: 100%;
+     text-align: center;
+     text-transform: uppercase;
+     font-weight: 100;
+     font-size: 3rem;
+     margin: 0;
+     padding: 0;
+}
+
+.gallery > span {
+     margin-bottom: 20px;
+}
+
+.gallery > section {
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     max-height: 700px;
+     margin: 0 auto;
+     align-content: center;
+}
+
+.selected{
+     background-image: url('../images/square.png');
+     width: 150px;
+     height: 150px;
+     background-color: rgba(0,0,0,.7);
+     background-blend-mode: multiply;
+     position: relative;
+}
+.selected > span {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     color: white;
+     font-size: 5rem;
+     margin-left: -2.5rem;
+     margin-top: -2.5rem;
+}
+
+.mobile{
+     display: none;
+}
+
+/* Mobile */
+@media all and (max-width: 700px) {
+     .mobile {
+          display: block;
+     }
+
+     .mobile > svg {
+          width: 50px;
+          margin-bottom: 10px;
+          float: right;
+     }
+
+     .desktopNav {
+          display: none;
+     }  
+
+     .offerings {
+          flex-wrap: wrap;
+     }
+     
+     .video section {
+          clear: both;
+          display: block;
+          width: 100%;
+     }
+
+     .video img {
+          margin: 50px 0;
+          width: 100%;
+     }
+
+     main > h1 {
+          padding-top: 20px;
+          font-size: 4rem;
+          width: 80%;
+     }
+
+     main > p {
+          font-size: 1.75rem;
+          width: 80%;
+     }
+
+     main > span {
+          margin-top: -200px;
+     }
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
