@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+html {
+  font-size: 62.5%;
+  font-family: "Roboto Slab", serif;
+  color: black;
+}
+
+body {
+  font-size: 1.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn {
+  background: black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-inline: 2rem;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  display: inline-block;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.btn-light {
+  background-color: #f0f0f0;
+  color: black;
+}
+
+.nav-desktop {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.nav-desktop .nav-desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.nav-mobile {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  width: 100vw;
+  height: fit-content;
+}
+.nav-mobile .nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  background-color: #f0f0f0;
+}
+.nav-mobile .nav-bar .nav-icon-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.nav-mobile .nav-bar .nav-icon-container .nav-icon {
+  width: 5rem;
+}
+.nav-mobile .nav-mobile-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  font-size: 3rem;
+  padding-top: 1rem;
+  display: none;
+  transition: display 2s, visibility 2s linear;
+}
+.nav-mobile .nav-mobile-menu > li {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.nav-mobile .nav-mobile-menu > li a:hover {
+  background-color: #e987ee;
+}
+
+.nav-desktop {
+  display: none;
+}
+
+.brandLogo {
+  font-family: "Sacramento", serif;
+  font-size: 3rem;
+}
+
+.hero {
+  background-image: url("../images/hero-img - mobile.jpeg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: white;
+  padding-left: 1rem;
+  margin-bottom: 13rem;
+  padding-right: 1rem;
+  position: relative;
+}
+.hero h1 {
+  font-weight: 300;
+  padding-top: 2rem;
+  margin-top: 0;
+  max-width: 300px;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  margin-bottom: 2rem;
+  max-width: 200px;
+  font-weight: 200;
+  font-size: 1.8rem;
+  font-style: italic;
+  color: #ead6ea;
+  background: -webkit-linear-gradient(left, #d2adcf, #460438);
+  background: -o-linear-gradient(right, #d2adcf, #460438);
+  background: -moz-linear-gradient(right, #d2adcf, #460438);
+  background: linear-gradient(to right, #582a58, #bc0998);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero aside {
+  background-color: black;
+  width: fit-content;
+  padding: 1.5rem;
+  position: absolute;
+  right: 0;
+  margin-right: 2rem;
+  bottom: -1;
+  margin-top: -10rem;
+}
+.hero aside span {
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #e987ee;
+  font-size: 1.2rem;
+}
+.hero aside h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 2rem;
+  max-width: 150px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.hero aside h2 strong {
+  font-size: 2rem;
+}
+.hero aside a {
+  font-size: 1.2rem;
+  margin-bottom: none;
+}
+
+.offerings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding-inline: 5rem;
+  margin-bottom: 5rem;
+}
+.offerings > section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  margin-bottom: 2rem;
+}
+.offerings > section h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.offerings > section i {
+  font-size: 3rem;
+  color: #e987ee;
+  margin-bottom: 2rem;
+}
+.offerings > section p {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  color: #4d4d4d;
+}
+.offerings > section:first-of-type > i {
+  color: #f258a1;
+  font-size: 4rem;
+}
+.offerings > section:nth-of-type(2) > i {
+  color: #2c6088;
+}
+.offerings > section:last-of-type > i {
+  color: #992a94;
+}
+
+.video {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  text-align: center;
+  padding-inline: 4rem;
+  margin-bottom: 5rem;
+}
+.video h3 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+.video p {
+  font-weight: 300;
+}
+.video img {
+  width: 100%;
+}
+
+.stylists {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.stylists > section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  width: 33%;
+  position: relative;
+  margin-bottom: 10rem;
+}
+.stylists > section div {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -25%;
+  width: 50%;
+}
+.stylists > section div h4 {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.stylists > section div span {
+  font-size: 1rem;
+}
+.stylists > section img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.offer {
+  padding: 2rem;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+}
+.offer div {
+  padding: 2rem;
+  background-image: url("../images/offer.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-clip: border-box;
+}
+.offer h4 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+.offer p {
+  font-size: 2rem;
+  font-weight: 300;
+  max-width: 250px;
+  margin-bottom: 4rem;
+}
+.offer a {
+  background-color: white;
+  color: black;
+}
+
+.gallery {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding-inline: 2rem;
+  margin-bottom: 5rem;
+}
+.gallery h3 {
+  font-size: 3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+}
+.gallery .gallery-grid {
+  display: grid;
+  grid-auto-columns: 1fr;
+  gap: 1em;
+  grid-template-areas: "one two three" "four two five" "four six five";
+}
+.gallery .gallery-grid > section:nth-child(1) {
+  grid-area: one;
+}
+.gallery .gallery-grid > section:nth-child(2) {
+  grid-area: two;
+}
+.gallery .gallery-grid > section:nth-child(3) {
+  grid-area: three;
+}
+.gallery .gallery-grid > section:nth-child(4) {
+  grid-area: four;
+}
+.gallery .gallery-grid > section:nth-child(5) {
+  grid-area: five;
+}
+.gallery .gallery-grid > section:nth-child(6) {
+  grid-area: six;
+}
+.gallery .gallery-grid > section:nth-child(6) img {
+  max-width: 159px;
+  max-height: 159px;
+  object-fit: contain;
+}
+.gallery .gallery-grid > section > img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+@media (min-width: 600px) {
+  .nav-desktop {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
