@@ -1,0 +1,20 @@
+// Button
+.btn {
+    background: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-inline: 2rem;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    display: inline-block;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.btn-light{
+    background-color: $background;
+    color: black;
+}

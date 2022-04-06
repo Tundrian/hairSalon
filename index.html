@@ -18,14 +18,15 @@
 		href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sacramento&display=swap"
 		rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-	<header class="flex">
-		<a href="#" class="brandLogo">Ayesha</a>
-		<nav class="flex desktopNav">
-			<ul class="flex">
+	<header >
+		<nav class="nav-desktop">
+			<a href="#" class="brandLogo">Ayesha</a>
+		
+			<ul class="nav-desktop">
 				<li><a href="#">Home</a></li>
 				<li><a href="#">About</a></li>
 				<li><a href="#">Services</a></li>
@@ -34,22 +35,38 @@
 				<li><a href="#">Contact</a></li>
 				<li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
 			</ul>
-			<a href="#" class="btn btn-light">Book Online</a>
+
+		
+		<a href="#" class="btn btn-light">Book Online</a>
 		</nav>
-		<nav class="mobile">
 
-			<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+		<nav class="nav-mobile">
+			<div class="nav-bar">
+				<a href="#" class="brandLogo">Ayesha</a>
+				<div class="nav-icon-container">
+					<svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+					</svg>
+				</div>
+			</div>
 
-				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-
-			</svg>
+			
+			<ul class="nav-mobile-menu">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Lookbook</a></li>
+				<li><a href="#">News</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+			</ul>
 
 		</nav>
 	</header>
 
-	<main>
+	<main class="hero">
 		<h1>Blonde & Highlight</h1>
-		<p>Divide Your Uniqueness By Your Hairs In Tyle</p>
+		<p>Let your beauty shine</p>
 		<a href="#" class="btn btn-dark">- Our Services</a>
 
 		<aside>
@@ -58,29 +75,28 @@
 			<a href="#" class="btn btn-light">- Book Online</a>
 		</aside>
 
-		<span>Mon - Sun : 7:00AM - 8:00PM</span>
+		<!-- <span>Mon - Sun : 7:00AM - 8:00PM</span> -->
 
-		<button><i class="fa-solid fa-right-long"></i></button>
-		<button><i class="fa-solid fa-left-long"></i></button>
+		<!-- <button><i class="fa-solid fa-right-long"></i></button>
+		<button><i class="fa-solid fa-left-long"></i></button> -->
 
 	</main>
 
 	<section class="offerings">
 		<section>
-			<i class="fa-solid fa-chair"></i>
+			<i class="fa-solid fa-plus"></i>
 			<h3>Expert Beauticians</h3>
+			<p>Professionally trained beauticians with decades of experience between us. </p>
+		</section>
+		<section>
+			<i class="fa-solid fa-scissors"></i>
+			<h3>Full Range of Services</h3>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam reprehenderit accusantium qui ea, neque
 				nulla.</p>
 		</section>
 		<section>
-			<i class="fa-solid fa-chair"></i>
-			<h3>Expert Beauticians</h3>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam reprehenderit accusantium qui ea, neque
-				nulla.</p>
-		</section>
-		<section>
-			<i class="fa-solid fa-chair"></i>
-			<h3>Expert Beauticians</h3>
+			<i class="fa-solid fa-shop"></i>
+			<h3>High Quality Studio</h3>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam reprehenderit accusantium qui ea, neque
 				nulla.</p>
 		</section>
@@ -102,21 +118,21 @@
 	<section class="stylists">
 		<section>
 			<img src="images/3.jpeg" alt="stylists">
-			<div>
+			<div class="btn">
 				<h4>Alita Willims</h4>
 				<span>- Colourist</span>
 			</div>
 		</section>
 		<section>
 			<img src="images/4.jpeg" alt="stylists">
-			<div>
+			<div class="btn">
 				<h4>Alita Willims</h4>
 				<span>- Colourist</span>
 			</div>
 		</section>
 		<section>
 			<img src="images/5.jpeg" alt="stylists">
-			<div>
+			<div class="btn">
 				<h4>Alita Willims</h4>
 				<span>- Colourist</span>
 			</div>
@@ -124,35 +140,37 @@
 	</section>
 
 	<section class="offer">
-		<h4>Color day offer!</h4>
-		<p><strong>-10%</strong> on haircut color and highlight</p>
-		<a href="#" class="btn btn-dark">- Book Appointment</a>
+		<div>
+			<h4>Color day offer!</h4>
+			<p><strong>-10%</strong> on haircut color and highlight</p>
+			<a href="#" class="btn ">- Book Appointment</a>
+		</div>
+		
 	</section>
 
 	<section class="gallery">
 		<h3>Our Lookbook</h3>
-		<span>-</span>
-		<section>
-		<section>
-			<img src="images/square.png" alt="stylist gallery">
+		
+		<section class="gallery-grid">
+			<section>
+				<img src="images/square.png" alt="stylist gallery">
+			</section>
+			<section>
+				<img src="images/double.png" alt="stylist gallery">
+			</section>
+			<section>
+				<img src="images/shortnarrow.png" alt="stylist gallery">
+			</section>
+			<section>
+				<img src="images/double2.png" alt="stylist gallery">
+			</section>
+			<section>
+				<img src="images/longnarrow.png" alt="stylist gallery">
+			</section>
+			<section>
+				<img src="images/square2.jpg" alt="stylist gallery">
+			</section>
 		</section>
-		<section>
-			<img src="images/double.png" alt="stylist gallery">
-		</section>
-		<section>
-			<img src="images/shortnarrow.png" alt="stylist gallery">
-		</section>
-		<section>
-			<img src="images/double2.png" alt="stylist gallery">
-		</section>
-		<section class="selected">
-			<!-- <img src="images/square.png" alt="stylist gallery"> -->
-		<span>+</span>
-		</section>
-		<section>
-			<img src="images/longnarrow.png" alt="stylist gallery">
-		</section>
-	</section>
 	</section>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
