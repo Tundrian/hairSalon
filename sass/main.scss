@@ -12,7 +12,7 @@
 
 .brandLogo {
     font-family: 'Sacramento', serif;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 // Hero
@@ -136,7 +136,9 @@
 
 .video{
     @include flexbox-around;
-
+    background-color: $background;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     text-align: center;
     padding-inline: 4rem;
     margin-bottom: 5rem;
@@ -191,6 +193,9 @@
 .offer{
     padding: 2rem;
     margin-bottom: 5rem;
+    background-color: $background;
+    text-transform: uppercase;
+    width: 100%;
 
     div{
         padding: 2rem;
@@ -200,9 +205,6 @@
         background-clip:border-box;
 
     }
-   
-    
-    text-transform: uppercase;
 
     h4{
         font-size: 1.5rem;
@@ -226,18 +228,25 @@
 
 .gallery {
     text-align: center;
-    @include flexbox-center;
     padding-inline: 2rem;
     margin-bottom: 5rem;
+
+    .flexCenter{
+        @include flexbox-center;
+    }
 
     h3{
         font-size: 3rem;
         font-weight: 300;
         text-transform: uppercase;
         margin-bottom: 4rem;
+        width: 100%;
+        display: block;
     }
 
     .gallery-grid{
+        
+        max-width: 450px;
         display: grid;
         grid-auto-columns: 1fr;
         gap: 1em;
@@ -280,6 +289,48 @@
         }
     }
 
+}
+
+.footer {
+    
+    background-color: darken($background, 10%);
+    color: darken($accent, 50%);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-inline: 10%;
+    height: fit-content;
+    
+    .flex-center{
+        @include flexbox-between;
+        align-items: flex-start;
+        margin-bottom: 5rem;
+    }
+    section{
+       
+        padding-inline: 1rem;
+
+
+        h5{
+            font-size: 2rem;
+            font-weight: 300;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+        }
+        p{
+            line-height: 1.5;
+            font-weight: 300;
+        }
+    
+        cite{
+            align-self:flex-end;
+            
+            width: 100%;
+            margin-top: 5rem;
+        }
+    }
+    
+    
 }
 
 @import 'media';
