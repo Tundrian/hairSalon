@@ -28,6 +28,7 @@
         background-image: url("../images/hero-img.jpeg");
         margin-bottom: 2rem;
         padding-bottom: 10rem;
+
         h1{
             width: fit-content;
             max-width: 50vw;
@@ -42,6 +43,7 @@
 
         a.btn{
             margin-bottom: 5rem;
+            font-size: 1.8rem;
         }
         aside{
             position: relative;
@@ -71,7 +73,7 @@
 
     .offerings {
         @include flexbox-around;
-        margin-top: 10rem;
+        margin-top: 5rem;
         margin-bottom: 10rem;
         &>section{
             width: 33%;
@@ -117,11 +119,16 @@
     }
 
     .offer{
-        margin-inline: auto;
-        max-width: 1000px;
+        @include flexbox-center;
+        div{
+           width: 90%;
+           max-width: 1000px;
+        }
+        // margin-inline: auto;
+        // max-width: 1000px;
     }
 
     .gallery{
-        display: block;
+        // display: flex;
     }
 }
